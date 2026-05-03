@@ -29,20 +29,6 @@ The synthetic dataset contains **10,000 samples**, each with:
 The 1D CNN has three convolutional layers, global average pooling, and a dense classifier.  
 It learns to distinguish the frequency patterns **directly from raw waveforms**, even with noise, random phases, and amplitude jitter.
 
----
-
-## Model Architecture (simplified)
-Input: (batch, 3, 100)
-  Conv1D (3 → 16, kernel 5, 'same')
-  ReLU + MaxPool1D(2)           → (batch, 16, 50)
-  Conv1D (16 → 32, kernel 5, 'same')
-  ReLU + MaxPool1D(2)           → (batch, 32, 25)
-  Conv1D (32 → 64, kernel 5, 'same')
-  ReLU                          → (batch, 64, 25)
-  GlobalAveragePool1D           → (batch, 64, 1)
-  Squeeze + Dense(64) + ReLU + Dropout(0.5)
-  Dense(3)                      → (batch, 3)
-
 
 ---
 
