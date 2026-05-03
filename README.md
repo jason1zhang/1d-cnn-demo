@@ -7,18 +7,6 @@ The entire pipeline can be easily adapted to real sensor data (ECG, acceleromete
 
 ---
 
-## 📁 Project Structure
-1d-cnn-demo/
-├── generate_data.py # Create synthetic multi-channel signals & export to CSV
-├── train_model.py # Load CSV, train 1D-CNN, evaluate, plot results
-└── README.md
-
-After running the scripts you will also see:
-- `synthetic_signals_mc.csv` – the generated dataset (can be inspected in Excel)
-- `training_curves_mc.png` – plots of loss & accuracy during training
-
----
-
 ## 🧠 What the Model Learns
 
 The synthetic dataset contains **10,000 samples**, each with:
