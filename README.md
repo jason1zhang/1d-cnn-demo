@@ -31,24 +31,6 @@ It learns to distinguish the frequency patterns **directly from raw waveforms**,
 
 ---
 
-## 🔧 Dependencies
-
-All dependencies are standard scientific Python packages:
-python>=3.8
-numpy
-pandas
-matplotlib
-scikit-learn
-torch
-
-Install them with pip:
-
-```bash
-pip install numpy pandas matplotlib scikit-learn torch
-
-
----
-
 ## Model Architecture (simplified)
 Input: (batch, 3, 100)
   Conv1D (3 → 16, kernel 5, 'same')
