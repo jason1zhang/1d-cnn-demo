@@ -46,6 +46,8 @@ Install them with pip:
 ```bash
 pip install numpy pandas matplotlib scikit-learn torch
 
+---
+
 ## Model Architecture (simplified)
 Input: (batch, 3, 100)
   Conv1D (3 → 16, kernel 5, 'same')
@@ -57,6 +59,8 @@ Input: (batch, 3, 100)
   GlobalAveragePool1D           → (batch, 64, 1)
   Squeeze + Dense(64) + ReLU + Dropout(0.5)
   Dense(3)                      → (batch, 3)
+
+---
 
 ## License
 This project is provided as a learning resource. Feel free to use, modify, and share it as you wish.
